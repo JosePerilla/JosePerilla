@@ -76,7 +76,7 @@
   <a href="https://github.com/ManuelPerilla?tab=overview"><img src="https://raw.githubusercontent.com/ManuelPerilla/ManuelPerilla/output/activity.svg" width="100%" alt="Daily contribution metrics: contributions, active days, current streak, longest streak, and a 12-week activity chart" /></a>
   <table align="center" width="100%" border="0" cellpadding="0" role="presentation">
     <tr>
-      <td width="50%" align="center" valign="middle">
+      <td width="50%" align="center" valign="top">
         <a href="https://github.com/ManuelPerilla?tab=overview">
           <picture>
             <source srcset="https://raw.githubusercontent.com/ManuelPerilla/ManuelPerilla/refs/heads/output/github-stats.svg" type="image/svg+xml" />
@@ -84,7 +84,7 @@
           </picture>
         </a>
       </td>
-      <td width="50%" align="center" valign="middle">
+      <td width="50%" align="center" valign="top">
         <a href="https://github.com/ManuelPerilla?tab=repositories">
           <picture>
             <source srcset="https://raw.githubusercontent.com/ManuelPerilla/ManuelPerilla/refs/heads/output/top-languages.svg" type="image/svg+xml" />
