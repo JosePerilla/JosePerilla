@@ -1,20 +1,20 @@
 <div align="center">
-  <img src=".assets/jose-perilla-banner.png" width="100%" alt="Jose Perilla — Backend Developer. Python, FastAPI and Docker, with Arlecchino as a crimson visual signature." />
+  <img src=".assets/manuel-perilla-banner.png" width="100%" alt="Manuel Perilla — Backend Developer. Python, FastAPI and Docker, with Arlecchino as a crimson visual signature." />
   <br />
-  <a href="https://github.com/JosePerilla">
+  <a href="https://github.com/ManuelPerilla">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=500&amp;size=21&amp;duration=3000&amp;pause=1500&amp;color=DC143C&amp;background=0D1117&amp;center=true&amp;vCenter=true&amp;width=880&amp;height=58&amp;lines=System+Analyst+%26+Backend+Developer;Python+%C2%B7+FastAPI+%C2%B7+.NET+%C2%B7+Rust;Azure+%C2%B7+Docker+%C2%B7+Terraform+%C2%B7+Jenkins;Arch+Linux+enthusiast.+Always+building." width="100%" alt="System analyst and backend developer · Python, FastAPI, .NET and Rust · Azure, Docker, Terraform and Jenkins · Arch Linux enthusiast" />
   </a>
   <p><samp>BASED IN COLOMBIA &nbsp; / &nbsp; BACKEND · CLOUD · AUTOMATION</samp></p>
   <p>
-    <a href="https://github.com/JosePerilla?tab=repositories"><img src="https://img.shields.io/badge/Explore_my_work-0D1117?style=for-the-badge&amp;logo=github&amp;logoColor=DC143C" alt="Explore my repositories" /></a>
-    <a href="https://github.com/JosePerilla?tab=overview"><img src="https://img.shields.io/badge/Contributions-0D1117?style=for-the-badge&amp;logo=git&amp;logoColor=DC143C" alt="See my contributions" /></a>
-    <a href="https://github.com/JosePerilla/JosePerilla/actions/workflows/snake.yml"><img src="https://img.shields.io/github/actions/workflow/status/JosePerilla/JosePerilla/snake.yml?branch=main&amp;style=for-the-badge&amp;label=Profile%20sync&amp;logo=githubactions&amp;logoColor=DC143C&amp;labelColor=0D1117&amp;color=DC143C" alt="Daily profile update status" /></a>
+    <a href="https://github.com/ManuelPerilla?tab=repositories"><img src="https://img.shields.io/badge/Explore_my_work-0D1117?style=for-the-badge&amp;logo=github&amp;logoColor=DC143C" alt="Explore my repositories" /></a>
+    <a href="https://github.com/ManuelPerilla?tab=overview"><img src="https://img.shields.io/badge/Contributions-0D1117?style=for-the-badge&amp;logo=git&amp;logoColor=DC143C" alt="See my contributions" /></a>
+    <a href="https://github.com/ManuelPerilla/ManuelPerilla/actions/workflows/snake.yml"><img src="https://img.shields.io/github/actions/workflow/status/ManuelPerilla/ManuelPerilla/snake.yml?branch=main&amp;style=for-the-badge&amp;label=Profile%20sync&amp;logo=githubactions&amp;logoColor=DC143C&amp;labelColor=0D1117&amp;color=DC143C" alt="Daily profile update status" /></a>
   </p>
 </div>
 
 <div align="center">
   <h2>01 &nbsp; / &nbsp; A little about me</h2>
-  <p>I'm <strong>Jose Manuel Perilla Peña</strong>, a systems analyst and backend developer from Colombia.<br />
+  <p>I'm <strong>Manuel Perilla</strong>, a systems analyst and backend developer from Colombia.<br />
   My focus is on <strong>APIs, data, cloud infrastructure and delivery automation</strong>.<br />
   I enjoy connecting the pieces: understanding a system, building its services,<br />
   and making those services easier to run and maintain.</p>
@@ -73,22 +73,22 @@
 <div align="center">
   <h2>03 &nbsp; / &nbsp; Activity &amp; consistency</h2>
   <p><samp>SMALL ITERATIONS. VISIBLE PROGRESS.</samp></p>
-  <a href="https://github.com/JosePerilla?tab=overview"><img src="https://raw.githubusercontent.com/JosePerilla/JosePerilla/output/activity.svg" width="100%" alt="Daily contribution metrics: contributions, active days, current streak, longest streak, and a 12-week activity chart" /></a>
+  <a href="https://github.com/ManuelPerilla?tab=overview"><img src="https://raw.githubusercontent.com/ManuelPerilla/ManuelPerilla/output/activity.svg" width="100%" alt="Daily contribution metrics: contributions, active days, current streak, longest streak, and a 12-week activity chart" /></a>
   <table align="center" width="100%" border="0" cellpadding="0" role="presentation">
     <tr>
       <td width="50%" align="center" valign="middle">
-        <a href="https://github.com/JosePerilla?tab=overview">
+        <a href="https://github.com/ManuelPerilla?tab=overview">
           <picture>
-            <source srcset="https://raw.githubusercontent.com/JosePerilla/JosePerilla/refs/heads/output/github-stats.svg" type="image/svg+xml" />
-            <img src="https://github-readme-stats.vercel.app/api?username=JosePerilla&amp;show_icons=true&amp;hide_rank=true&amp;show=reviews,prs_merged,prs_merged_percentage&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=DC143C&amp;text_color=8B8B8B&amp;icon_color=DC143C&amp;custom_title=GitHub%20in%20numbers" width="100%" alt="GitHub in numbers: commits, pull requests, issues, reviews and merged pull requests" />
+            <source srcset="https://raw.githubusercontent.com/ManuelPerilla/ManuelPerilla/refs/heads/output/github-stats.svg" type="image/svg+xml" />
+            <img src="https://github-readme-stats.vercel.app/api?username=ManuelPerilla&amp;show_icons=true&amp;hide_rank=true&amp;show=reviews,prs_merged,prs_merged_percentage&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=DC143C&amp;text_color=8B8B8B&amp;icon_color=DC143C&amp;custom_title=GitHub%20in%20numbers" width="100%" alt="GitHub in numbers: commits, pull requests, issues, reviews and merged pull requests" />
           </picture>
         </a>
       </td>
       <td width="50%" align="center" valign="middle">
-        <a href="https://github.com/JosePerilla?tab=repositories">
+        <a href="https://github.com/ManuelPerilla?tab=repositories">
           <picture>
-            <source srcset="https://raw.githubusercontent.com/JosePerilla/JosePerilla/refs/heads/output/top-languages.svg" type="image/svg+xml" />
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JosePerilla&amp;layout=compact&amp;langs_count=6&amp;card_width=467&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=DC143C&amp;text_color=8B8B8B&amp;custom_title=Public%20code" width="100%" alt="Languages detected in my public repositories" />
+            <source srcset="https://raw.githubusercontent.com/ManuelPerilla/ManuelPerilla/refs/heads/output/top-languages.svg" type="image/svg+xml" />
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManuelPerilla&amp;layout=compact&amp;langs_count=6&amp;card_width=467&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=DC143C&amp;text_color=8B8B8B&amp;custom_title=Public%20code" width="100%" alt="Languages detected in my public repositories" />
           </picture>
         </a>
         <p><sub>Languages reflect public code.<br />My full technology stack is listed above.</sub></p>
@@ -101,10 +101,10 @@
 <div align="center">
   <h2>04 &nbsp; / &nbsp; Keep the fire moving</h2>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JosePerilla/JosePerilla/output/github-contribution-grid-snake-dark.svg" />
-    <img src="https://raw.githubusercontent.com/JosePerilla/JosePerilla/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake animation tracing my GitHub contributions in crimson" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ManuelPerilla/ManuelPerilla/output/github-contribution-grid-snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/ManuelPerilla/ManuelPerilla/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake animation tracing my GitHub contributions in crimson" />
   </picture>
   <img src=".assets/ember-divider.svg" width="100%" alt="A subtle crimson ember divider" />
-  <p><strong>Jose Perilla</strong> &nbsp; · &nbsp; <samp>BUILD WITH INTENT.</samp></p>
+  <p><strong>Manuel Perilla</strong> &nbsp; · &nbsp; <samp>BUILD WITH INTENT.</samp></p>
   <p><sub>Arlecchino-inspired visuals · A developer's personal space · <a href=".assets/SOURCES.md">Artwork &amp; credits</a></sub></p>
 </div>

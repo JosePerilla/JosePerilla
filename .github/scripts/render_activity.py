@@ -124,7 +124,7 @@ def fetch_days(login, token):
     request = Request("https://api.github.com/graphql",
                       data=json.dumps({"query": QUERY, "variables": {"login": login}}).encode(),
                       headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json",
-                               "User-Agent": "JosePerilla-profile-metrics"})
+                               "User-Agent": "ManuelPerilla-profile-metrics"})
     for attempt in range(3):
         try:
             with urlopen(request, timeout=30) as response:

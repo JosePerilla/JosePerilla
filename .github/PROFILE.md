@@ -1,10 +1,10 @@
-# Maintaining Jose Perilla's profile
+# Maintaining Manuel Perilla's profile
 
-The profile is `JosePerilla/JosePerilla`; `main` contains its source and the orphan `output` branch contains four generated SVGs. The 2172 × 724 PNG banner, technology icons and small vector animations are stored under `.assets`.
+The profile is `ManuelPerilla/ManuelPerilla`; `main` contains its source and the orphan `output` branch contains four generated SVGs. The 2172 × 724 PNG banner, technology icons and small vector animations are stored under `.assets`.
 
 ## Daily refresh
 
-`.github/workflows/snake.yml` runs at **00:00 America/Bogota**, expressed as `0 5 * * *` in GitHub's default UTC schedule. It also runs on relevant pushes to `main` and can be started manually from **Actions → Profile | Jose Perilla → Run workflow**. Scheduled runs can be delayed by GitHub; inactive public repositories may have their schedules disabled after 60 days.
+`.github/workflows/snake.yml` runs at **00:00 America/Bogota**, expressed as `0 5 * * *` in GitHub's default UTC schedule. It also runs on relevant pushes to `main` and can be started manually from **Actions → Profile | Manuel Perilla → Run workflow**. Scheduled runs can be delayed by GitHub; inactive public repositories may have their schedules disabled after 60 days.
 
 The workflow uses the automatic `GITHUB_TOKEN` with `contents: write`; no personal access token is required. It generates the snake, both statistics cards and the activity dashboard, validates the SVGs, and publishes them together. A failed generation leaves the previous successful output in place. Only activity visible to this workflow is requested; no additional access to private repositories is configured. No repository is made public by this workflow.
 
@@ -31,8 +31,8 @@ The Top Languages card reports languages detected in public repositories. If non
 
 Images and generated cards use a permanent dark palette. GitHub controls the surrounding page theme and its table borders; README HTML cannot force the visitor's entire page into dark mode or override GitHub's CSS. `border="0"` expresses the layout intent, but GitHub may still draw table borders.
 
-The snake uses a real `<img alt="Snake animation">` inside `<picture>`, the HTML equivalent of `![Snake animation](https://raw.githubusercontent.com/JosePerilla/JosePerilla/output/github-contribution-grid-snake-dark.svg)`. This keeps the README valid HTML and avoids displaying unparsed Markdown inside a raw HTML block.
+The snake uses a real `<img alt="Snake animation">` inside `<picture>`, the HTML equivalent of `![Snake animation](https://raw.githubusercontent.com/ManuelPerilla/ManuelPerilla/output/github-contribution-grid-snake-dark.svg)`. This keeps the README valid HTML and avoids displaying unparsed Markdown inside a raw HTML block.
 
-To change the banner, replace `.assets/jose-perilla-banner.png` and update `.assets/SOURCES.md`. No placeholder or unresolved banner TODO remains. Technology icons are stored locally, with their license, so their rendering does not depend on an icon API.
+To change the banner, replace `.assets/manuel-perilla-banner.png` and update `.assets/SOURCES.md`. No placeholder or unresolved banner TODO remains. Technology icons are stored locally, with their license, so their rendering does not depend on an icon API.
 
 For the separate GitHub profile settings, see [PROFILE-SETTINGS.md](PROFILE-SETTINGS.md).

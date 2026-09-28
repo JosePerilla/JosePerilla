@@ -1,4 +1,4 @@
-name: Profile | Jose Perilla
+name: Profile | Manuel Perilla
 
 on:
   schedule:
@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   regenerate:
-    if: github.repository == 'JosePerilla/JosePerilla'
+    if: github.repository == 'ManuelPerilla/ManuelPerilla'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -100,4 +100,4 @@ jobs:
           publish_branch: output
           publish_dir: ./dist
           force_orphan: true
-          full_commit_message: "chore: refresh Jose Perilla's profile metrics"
+          full_commit_message: "chore: refresh Manuel Perilla's profile metrics"

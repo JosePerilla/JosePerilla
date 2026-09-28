@@ -1,10 +1,10 @@
-# Configuración del perfil de Jose Perilla
+# Configuración del perfil de Manuel Perilla
 
 La biografía se actualizó desde la sesión de GitHub. Los campos sin información nueva se conservaron.
 
 | Apartado | Valor o recomendación | Estado |
 | --- | --- | --- |
-| Nombre | Jose Manuel Perilla Peña | Conservado; la cabecera usa la forma corta Jose Perilla. |
+| Nombre | Manuel Perilla | Nombre visible confirmado; coincide con la cabecera y el README. |
 | Biografía | System analyst & backend developer. Python, FastAPI, .NET & Rust. Azure, Docker, Terraform & Jenkins. Arch Linux enthusiast. Colombia. | Actualizada. |
 | Ubicación | Colombia | Conservada. |
 | URL | Enlace a tu portafolio personal cuando esté publicado. | Vacío; no se inventó un sitio. |
