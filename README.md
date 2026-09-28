@@ -18,13 +18,6 @@
   My focus is on <strong>APIs, data, cloud infrastructure and delivery automation</strong>.<br />
   I enjoy connecting the pieces: understanding a system, building its services,<br />
   and making those services easier to run and maintain.</p>
-  <table align="center" width="100%" border="0" role="presentation">
-    <tr>
-      <td width="33%" align="center" valign="top"><h3>Understand</h3><p>Systems analysis<br />Data modeling<br />Clear responsibilities</p></td>
-      <td width="34%" align="center" valign="top"><h3>Build</h3><p>Backend services<br />APIs and databases<br />Practical tooling</p></td>
-      <td width="33%" align="center" valign="top"><h3>Deliver</h3><p>Containers and cloud<br />Infrastructure as code<br />Repeatable pipelines</p></td>
-    </tr>
-  </table>
   <img src=".assets/build-loop.svg" width="100%" alt="Understand → build → deliver: a gently animated development loop" />
 </div>
 
@@ -36,21 +29,21 @@
       <td width="50%" align="center" valign="top">
         <h3>Backend &amp; data</h3>
         <p>
-          <a href="https://www.python.org/"><img src=".assets/icons/Python-Dark.svg" width="46" height="46" alt="Python" title="Python" /></a>&nbsp;
-          <a href="https://fastapi.tiangolo.com/"><img src=".assets/icons/FastAPI.svg" width="46" height="46" alt="FastAPI" title="FastAPI" /></a>&nbsp;
-          <a href="https://dotnet.microsoft.com/"><img src=".assets/icons/DotNet.svg" width="46" height="46" alt=".NET" title=".NET" /></a>&nbsp;
-          <a href="https://www.rust-lang.org/"><img src=".assets/icons/Rust.svg" width="46" height="46" alt="Rust" title="Rust" /></a>&nbsp;
-          <a href="https://www.postgresql.org/"><img src=".assets/icons/PostgreSQL-Dark.svg" width="46" height="46" alt="PostgreSQL" title="PostgreSQL" /></a>
+          <a href="https://www.python.org/"><img src=".assets/icons/Python-Dark.svg" width="42" height="42" alt="Python" title="Python" /></a>
+          <a href="https://fastapi.tiangolo.com/"><img src=".assets/icons/FastAPI.svg" width="42" height="42" alt="FastAPI" title="FastAPI" /></a>
+          <a href="https://dotnet.microsoft.com/"><img src=".assets/icons/DotNet.svg" width="42" height="42" alt=".NET" title=".NET" /></a>
+          <a href="https://www.rust-lang.org/"><img src=".assets/icons/Rust.svg" width="42" height="42" alt="Rust" title="Rust" /></a>
+          <a href="https://www.postgresql.org/"><img src=".assets/icons/PostgreSQL-Dark.svg" width="42" height="42" alt="PostgreSQL" title="PostgreSQL" /></a>
         </p>
         <p><sub>Python · FastAPI · .NET · Rust · PostgreSQL</sub></p>
       </td>
       <td width="50%" align="center" valign="top">
         <h3>Cloud &amp; delivery</h3>
         <p>
-          <a href="https://azure.microsoft.com/"><img src=".assets/icons/Azure-Dark.svg" width="46" height="46" alt="Azure" title="Azure" /></a>&nbsp;
-          <a href="https://www.docker.com/"><img src=".assets/icons/Docker.svg" width="46" height="46" alt="Docker" title="Docker" /></a>&nbsp;
-          <a href="https://developer.hashicorp.com/terraform"><img src=".assets/icons/Terraform-Dark.svg" width="46" height="46" alt="Terraform" title="Terraform" /></a>&nbsp;
-          <a href="https://www.jenkins.io/"><img src=".assets/icons/Jenkins-Dark.svg" width="46" height="46" alt="Jenkins" title="Jenkins" /></a>
+          <a href="https://azure.microsoft.com/"><img src=".assets/icons/Azure-Dark.svg" width="42" height="42" alt="Azure" title="Azure" /></a>
+          <a href="https://www.docker.com/"><img src=".assets/icons/Docker.svg" width="42" height="42" alt="Docker" title="Docker" /></a>
+          <a href="https://developer.hashicorp.com/terraform"><img src=".assets/icons/Terraform-Dark.svg" width="42" height="42" alt="Terraform" title="Terraform" /></a>
+          <a href="https://www.jenkins.io/"><img src=".assets/icons/Jenkins-Dark.svg" width="42" height="42" alt="Jenkins" title="Jenkins" /></a>
         </p>
         <p><sub>Azure · Docker · Terraform · Jenkins</sub></p>
       </td>
@@ -59,17 +52,17 @@
       <td width="50%" align="center" valign="top">
         <h3>Web foundations</h3>
         <p>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src=".assets/icons/HTML.svg" width="46" height="46" alt="HTML" title="HTML" /></a>&nbsp;
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src=".assets/icons/CSS.svg" width="46" height="46" alt="CSS" title="CSS" /></a>&nbsp;
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src=".assets/icons/JavaScript.svg" width="46" height="46" alt="JavaScript" title="JavaScript" /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src=".assets/icons/HTML.svg" width="42" height="42" alt="HTML" title="HTML" /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src=".assets/icons/CSS.svg" width="42" height="42" alt="CSS" title="CSS" /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src=".assets/icons/JavaScript.svg" width="42" height="42" alt="JavaScript" title="JavaScript" /></a>
         </p>
         <p><sub>HTML · CSS · JavaScript</sub></p>
       </td>
       <td width="50%" align="center" valign="top">
         <h3>Everyday environment</h3>
         <p>
-          <a href="https://archlinux.org/"><img src=".assets/icons/Arch-Dark.svg" width="46" height="46" alt="Arch Linux" title="Arch Linux" /></a>&nbsp;
-          <a href="https://git-scm.com/"><img src=".assets/icons/Git.svg" width="46" height="46" alt="Git" title="Git" /></a>
+          <a href="https://archlinux.org/"><img src=".assets/icons/Arch-Dark.svg" width="42" height="42" alt="Arch Linux" title="Arch Linux" /></a>
+          <a href="https://git-scm.com/"><img src=".assets/icons/Git.svg" width="42" height="42" alt="Git" title="Git" /></a>
         </p>
         <p><sub>Arch Linux · Git</sub></p>
       </td>
