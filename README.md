@@ -79,7 +79,7 @@
       <td width="50%" align="center" valign="middle">
         <a href="https://github.com/JosePerilla?tab=overview">
           <picture>
-            <source srcset="https://raw.githubusercontent.com/JosePerilla/JosePerilla/output/github-stats.svg" type="image/svg+xml" />
+            <source srcset="https://raw.githubusercontent.com/JosePerilla/JosePerilla/refs/heads/output/github-stats.svg" type="image/svg+xml" />
             <img src="https://github-readme-stats.vercel.app/api?username=JosePerilla&amp;show_icons=true&amp;hide_rank=true&amp;show=reviews,prs_merged,prs_merged_percentage&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=DC143C&amp;text_color=8B8B8B&amp;icon_color=DC143C&amp;custom_title=GitHub%20in%20numbers" width="100%" alt="GitHub in numbers: commits, pull requests, issues, reviews and merged pull requests" />
           </picture>
         </a>
@@ -87,7 +87,7 @@
       <td width="50%" align="center" valign="middle">
         <a href="https://github.com/JosePerilla?tab=repositories">
           <picture>
-            <source srcset="https://raw.githubusercontent.com/JosePerilla/JosePerilla/output/top-languages.svg" type="image/svg+xml" />
+            <source srcset="https://raw.githubusercontent.com/JosePerilla/JosePerilla/refs/heads/output/top-languages.svg" type="image/svg+xml" />
             <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JosePerilla&amp;layout=compact&amp;langs_count=6&amp;card_width=467&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=DC143C&amp;text_color=8B8B8B&amp;custom_title=Public%20code" width="100%" alt="Languages detected in my public repositories" />
           </picture>
         </a>
