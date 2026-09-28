@@ -1,12 +1,25 @@
-# Maintaining the House of the Hearth
+# Maintaining Jose Perilla's profile
 
-The profile is `JosePerilla/JosePerilla`; `main` contains its source and the orphan `output` branch contains the three generated SVGs. The banner is stored locally under `.assets`.
+The profile is `JosePerilla/JosePerilla`; `main` contains its source and the orphan `output` branch contains four generated SVGs. The 2172 × 724 PNG banner, technology icons and small vector animations are stored under `.assets`.
 
 ## Daily refresh
 
-`.github/workflows/snake.yml` runs at **00:00 America/Bogota**, expressed as `0 5 * * *` in GitHub's default UTC schedule. It also runs on relevant pushes to `main` and can be started manually from **Actions → House of the Hearth → Run workflow**. Scheduled runs can be delayed by GitHub; inactive public repositories may have their schedules disabled after 60 days.
+`.github/workflows/snake.yml` runs at **00:00 America/Bogota**, expressed as `0 5 * * *` in GitHub's default UTC schedule. It also runs on relevant pushes to `main` and can be started manually from **Actions → Profile | Jose Perilla → Run workflow**. Scheduled runs can be delayed by GitHub; inactive public repositories may have their schedules disabled after 60 days.
 
-The workflow uses the automatic `GITHUB_TOKEN` with `contents: write`; no personal access token is required. It generates the snake and both statistics cards, validates the SVGs, and publishes them together. A failed generation leaves the previous successful output in place. Only public repository statistics are requested; no additional access to private repositories is configured.
+The workflow uses the automatic `GITHUB_TOKEN` with `contents: write`; no personal access token is required. It generates the snake, both statistics cards and the activity dashboard, validates the SVGs, and publishes them together. A failed generation leaves the previous successful output in place. Only activity visible to this workflow is requested; no additional access to private repositories is configured. No repository is made public by this workflow.
+
+## Activity calculations
+
+`activity.svg` uses the contribution dates and counts returned by GitHub's GraphQL contribution calendar. It does not estimate activity from the listed tech stack or use simulated data.
+
+- Contributions and active days cover the last 365 calendar dates, ending today in UTC.
+- The current streak counts consecutive dates with contributions. If today has no contributions yet, counting starts yesterday; a quiet yesterday breaks the streak.
+- The longest streak is limited to that same 365-day window, not the account's entire lifetime.
+- The chart groups the last 84 dates into twelve consecutive seven-day buckets. Its final bucket includes the current partial day; these are not necessarily Monday-to-Sunday weeks.
+- Counts follow GitHub's contribution attribution rules and may not match every commit ever pushed.
+- Unit tests cover quiet days, gaps, window boundaries, leap days, empty data and invalid data.
+
+The subtle pulse animations have reduced-motion alternatives. The banner is a sharp static PNG; typing and the contribution snake provide larger movement without an autoplaying low-resolution video.
 
 ## Statistics availability
 
@@ -20,4 +33,6 @@ Images and generated cards use a permanent dark palette. GitHub controls the sur
 
 The snake uses a real `<img alt="Snake animation">` inside `<picture>`, the HTML equivalent of `![Snake animation](https://raw.githubusercontent.com/JosePerilla/JosePerilla/output/github-contribution-grid-snake-dark.svg)`. This keeps the README valid HTML and avoids displaying unparsed Markdown inside a raw HTML block.
 
-To change the banner, replace `.assets/arlecchino-banner.gif` and update `.assets/SOURCES.md`. No placeholder or unresolved banner TODO remains.
+To change the banner, replace `.assets/jose-perilla-banner.png` and update `.assets/SOURCES.md`. No placeholder or unresolved banner TODO remains. Technology icons are stored locally, with their license, so their rendering does not depend on an icon API.
+
+For the separate GitHub profile settings, see [PROFILE-SETTINGS.md](PROFILE-SETTINGS.md).

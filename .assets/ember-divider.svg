@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="40" viewBox="0 0 960 40" role="img" aria-labelledby="title">
+  <title id="title">Crimson ember</title>
+  <style>.ember{animation:glow 5s ease-in-out infinite}@keyframes glow{0%,100%{opacity:.4}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.ember{animation:none;opacity:1}}</style>
+  <rect width="960" height="40" fill="#0D1117"/>
+  <path d="M45 20h390m90 0h390" stroke="#DC143C" stroke-opacity=".25"/>
+  <path class="ember" d="M480 12 488 20 480 28 472 20Z" fill="#DC143C"/>
+</svg>

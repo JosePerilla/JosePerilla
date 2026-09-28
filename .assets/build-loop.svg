@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="70" viewBox="0 0 960 70" role="img" aria-labelledby="title">
+  <title id="title">Understand, build, deliver</title>
+  <style>.pulse{animation:pulse 6s ease-in-out infinite}.second{animation-delay:2s}.third{animation-delay:4s}@keyframes pulse{0%,65%,100%{opacity:.4}20%,35%{opacity:1}}@media(prefers-reduced-motion:reduce){.pulse{animation:none;opacity:1}}</style>
+  <rect width="960" height="70" rx="12" fill="#0D1117"/>
+  <path d="M140 35H820" stroke="#252A33"/>
+  <g fill="#0D1117" stroke="#DC143C" stroke-width="1.5"><circle cx="160" cy="35" r="18"/><circle cx="480" cy="35" r="18"/><circle cx="800" cy="35" r="18"/></g>
+  <g fill="none" stroke="#DC143C" stroke-width="1.6" stroke-linecap="round"><path class="pulse" d="M153 35l5 5 9-10"/><path class="pulse second" d="M475 29l-6 6 6 6m10-12 6 6-6 6m-4-14-3 16"/><path class="pulse third" d="M793 40l7-14 7 14-7-4z"/></g>
+  <circle class="pulse" cx="320" cy="35" r="3" fill="#FF2400"/><circle class="pulse second" cx="640" cy="35" r="3" fill="#FF2400"/>
+</svg>

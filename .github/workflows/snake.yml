@@ -1,4 +1,4 @@
-name: House of the Hearth
+name: Profile | Jose Perilla
 
 on:
   schedule:
@@ -10,6 +10,8 @@ on:
     paths:
       - README.md
       - .github/workflows/snake.yml
+      - .github/scripts/**
+      - .github/tests/**
 
 permissions:
   contents: write
@@ -41,7 +43,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&bg_color=0D1117&title_color=DC143C&text_color=8B8B8B&icon_color=FF2400&ring_color=DC143C&custom_title=GitHub%20Stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&show=reviews,prs_merged,prs_merged_percentage&hide_border=true&bg_color=0D1117&title_color=DC143C&text_color=8B8B8B&icon_color=DC143C&custom_title=GitHub%20in%20numbers
           path: dist/github-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           core_version: "2.2.0"
@@ -51,13 +53,22 @@ jobs:
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&card_width=467&hide_border=true&bg_color=0D1117&title_color=DC143C&text_color=8B8B8B&custom_title=Top%20Languages
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&card_width=467&hide_border=true&bg_color=0D1117&title_color=DC143C&text_color=8B8B8B&custom_title=Public%20code
           path: dist/top-languages.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           core_version: "2.2.0"
           fail_on_error: "true"
 
-      - name: Give the snake a permanent dark canvas
+      - name: Verify contribution calculations
+        run: python3 -m unittest discover -s .github/tests -v
+
+      - name: Generate the activity dashboard
+        run: python3 .github/scripts/render_activity.py
+        env:
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Give the snake a permanent dark canvas and validate all cards
         shell: python
         run: |
           from pathlib import Path
@@ -77,7 +88,7 @@ jobs:
           svg = re.sub(r"(<svg\b[^>]*>)", lambda m: m[1] + background, svg, count=1)
           snake.write_text(svg, encoding="utf-8")
 
-          for name in ("github-stats.svg", "top-languages.svg", snake.name):
+          for name in ("github-stats.svg", "top-languages.svg", "activity.svg", snake.name):
               path = Path("dist") / name
               assert path.stat().st_size > 100, f"Empty asset: {name}"
               assert ET.parse(path).getroot().tag == "{http://www.w3.org/2000/svg}svg"
@@ -89,4 +100,4 @@ jobs:
           publish_branch: output
           publish_dir: ./dist
           force_orphan: true
-          full_commit_message: "chore: rekindle the House of the Hearth"
+          full_commit_message: "chore: refresh Jose Perilla's profile metrics"
