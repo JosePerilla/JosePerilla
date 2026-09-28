@@ -1,0 +1,92 @@
+name: House of the Hearth
+
+on:
+  schedule:
+    # Midnight in Bogota, Colombia (UTC-5).
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - .github/workflows/snake.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: house-of-the-hearth-output
+  cancel-in-progress: false
+
+jobs:
+  regenerate:
+    if: github.repository == 'JosePerilla/JosePerilla'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the profile
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Generate the crimson contribution snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%23DC143C&color_dots=%230D1117,%232C2C32,%234C202B,%237A1831,%23A9183C
+
+      - name: Generate GitHub Stats
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&bg_color=0D1117&title_color=DC143C&text_color=8B8B8B&icon_color=FF2400&ring_color=DC143C&custom_title=GitHub%20Stats
+          path: dist/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          core_version: "2.2.0"
+          fail_on_error: "true"
+
+      - name: Generate Top Languages
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&card_width=467&hide_border=true&bg_color=0D1117&title_color=DC143C&text_color=8B8B8B&custom_title=Top%20Languages
+          path: dist/top-languages.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          core_version: "2.2.0"
+          fail_on_error: "true"
+
+      - name: Give the snake a permanent dark canvas
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          import xml.etree.ElementTree as ET
+
+          snake = Path("dist/github-contribution-grid-snake-dark.svg")
+          svg = snake.read_text(encoding="utf-8")
+          root = ET.fromstring(svg)
+          x, y, width, height = root.attrib.get(
+              "viewBox", f"0 0 {root.attrib['width']} {root.attrib['height']}"
+          ).split()
+          background = (
+              f'<rect x="{x}" y="{y}" width="{width}" height="{height}" '
+              'fill="#0D1117"/>'
+          )
+          svg = re.sub(r"(<svg\b[^>]*>)", lambda m: m[1] + background, svg, count=1)
+          snake.write_text(svg, encoding="utf-8")
+
+          for name in ("github-stats.svg", "top-languages.svg", snake.name):
+              path = Path("dist") / name
+              assert path.stat().st_size > 100, f"Empty asset: {name}"
+              assert ET.parse(path).getroot().tag == "{http://www.w3.org/2000/svg}svg"
+
+      - name: Publish to the orphan output branch
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          force_orphan: true
+          full_commit_message: "chore: rekindle the House of the Hearth"
